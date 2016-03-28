@@ -2,6 +2,8 @@
     <meta name="referrer" content="origin" />
     <link rel="next" href="{{ site.baseurl }}page2/" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css">
+
     <meta property="og:site_name" content="{{ site.name }}" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{ site.name }}" />
@@ -25,6 +27,14 @@
     "description": "{{ site.description }}"
 }
     </script>
+
+    <style type="text/css">
+      #map {
+        width:400px;
+        height:550px;
+        background-color: red;
+      }
+    </style>
 
     <meta name="generator" content="Jekyll 3.0.0" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.baseurl }}rss.xml" />
