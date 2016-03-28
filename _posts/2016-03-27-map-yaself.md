@@ -9,21 +9,20 @@ categories: 'kyle'
 navigation: True
 logo: 'assets/images/ghost.png'
 ---
-
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
 <div id="map">
 
 </div>
 
 <script>
-        var map = L.map('map').setView([34.00000, -118.260126], 14);
 
-        mapLink =
-'<a href="http://openstreetmap.org">OpenStreetMap</a>'; L.tileLayer(
-'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: 'Map data &copy; ' + mapLink, maxZoom: 18, }).addTo(map);
+var mapboxAccessToken = 'pk.eyJ1Ijoia2hldXRvbiIsImEiOiJjaW1janY0MWUwMDBvdWZsdnY4YXdubjRrIn0._VsfvE51YTv8S4SeKoIRlA';
+var map = L.map('map').setView([37.8, -96], 4);
 
-
-        var marker = L.marker([34.063298, -118.260126]) .addTo(map).bindPopup("<b>Blah Blah Blah</b><br /><a href='http://www.cnn.com'>Additional Information</a><br />").openPopup();
-
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + mapboxAccessToken, {
+    id: 'kheuton.phg9o4a0',
+    attribution: 'None'
+}).addTo(map);
 
 </script>
-  
