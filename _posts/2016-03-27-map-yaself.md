@@ -19,10 +19,14 @@ logo: 'assets/images/ghost.png'
 
 var mapboxAccessToken = 'pk.eyJ1Ijoia2hldXRvbiIsImEiOiJjaW1janY0MWUwMDBvdWZsdnY4YXdubjRrIn0._VsfvE51YTv8S4SeKoIRlA';
 var map = L.map('map').setView([37.8, -96], 4);
-
+L.tileLayer('http://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
+	maxZoom: 18,
+	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + mapboxAccessToken, {
     id: 'kheuton.phg9o4a0',
-    attribution: 'None'
-}).addTo(map);
+    attribution: 'None',
+    tms: false,
+});
 
 </script>
