@@ -7,15 +7,15 @@ paginate: 5
 language: 'en-uk'
 
 # Website info
-name: 'Finding The Way To Blog'
-description: "Me just trying to figure out how to publish with jekyll."
+name: 'Education Maps'
+description: ""
 
 # Author's info
 author: 'Kyle Heuton'
 # edit 'categories' in the front matter of every post to match this username
 nickname: kyle
-bio: 'Global Health Research'
-location: 'Seattle'
+bio: 'Global Health Researcher'
+location: 'Seattle, USA'
 url: 'http://kheuton.github.io/'
 image: 'assets/images/casper.png'
 
