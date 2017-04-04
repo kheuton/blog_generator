@@ -1,7 +1,7 @@
 ---
 layout: post
 cover: 'assets/images/cover7.jpg'
-title: Mapping District Average Scores
+title: Hilarious  Attempt to Map Every School District in the Country
 date:   2016-04-28 10:18:00
 tags: maps
 subclass: 'post tag-test tag-content'
