@@ -1,7 +1,7 @@
 ---
 layout: post
 cover: 'assets/images/cover7.jpg'
-title: Hilarious  Attempt to Map Every School District in the Country
+title: An Embarrassing Attempt to Map Every School District in the Country
 date:   2016-04-28 10:18:00
 tags: maps
 subclass: 'post tag-test tag-content'
@@ -41,6 +41,7 @@ logo: 'assets/images/ghost.png'
 	opacity: 0.7;
 }
 </style>
+This one didn't work out so hot. Mapping this many locations interactively wasn't a good idea, I should have made map tiles that could be loaded dynamically. Data was scraped from this excellent <a href="https://www.nytimes.com/interactive/2016/04/29/upshot/money-race-and-success-how-your-school-district-compares.html?_r=0">New York Times article</a> on educational inequality in the US. Shapefiles came from USGS, and I did the fuzzy-name matching myself, but that failed a bit too.
 <div id="map">
 
 </div>
@@ -86,9 +87,9 @@ L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Li
 		};
 
 		info.update = function (props) {
-			this._div.innerHTML = '<h4>Achievement Gap</h4>' +  (props ?
-				'<b>' + props.data_name + '</b><br />' + props.score + '% more White students meet standards than their Black peers'
-				: 'Hover over a school');
+			this._div.innerHTML = '<h4>Average Score</h4>' +  (props ?
+				'<b>' + props.data_name + '</b><br />' + props.score
+				: 'Hover over a district');
 		};
 
 		info.addTo(map);
@@ -179,7 +180,7 @@ L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Li
 				onEachFeature: onEachFeature
 			}).addTo(map);
 
-		map.attributionControl.addAttribution('Assessment data &copy; <a href="http://www.k12.wa.us/">OSPI</a>');
+		map.attributionControl.addAttribution('District data &copy; <a href="https://www.nytimes.com/interactive/2016/04/29/upshot/money-race-and-success-how-your-school-district-compares.html?_r=0">NYT</a>');
 
 
 		var legend = L.control({position: 'bottomright'});
