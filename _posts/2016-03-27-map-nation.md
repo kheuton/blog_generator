@@ -41,7 +41,7 @@ logo: 'assets/images/ghost.png'
 	opacity: 0.7;
 }
 </style>
-This one didn't work out so hot. Mapping this many locations interactively wasn't a good idea, I should have made map tiles that could be loaded dynamically. Data was scraped from this excellent <a href="https://www.nytimes.com/interactive/2016/04/29/upshot/money-race-and-success-how-your-school-district-compares.html?_r=0">New York Times article</a> on educational inequality in the US. Shapefiles came from USGS, and I did the fuzzy-name matching myself, but that failed a bit too.
+This one didn't work out so hot. Mapping this many locations interactively wasn't a good idea- I should have made map tiles that could be loaded dynamically. Data were scraped from this excellent <a href="https://www.nytimes.com/interactive/2016/04/29/upshot/money-race-and-success-how-your-school-district-compares.html?_r=0">New York Times article</a> on educational inequality in the US. Shapefiles came from USGS, and I did the fuzzy-name matching myself, but that failed a bit too.
 <div id="map">
 
 </div>
