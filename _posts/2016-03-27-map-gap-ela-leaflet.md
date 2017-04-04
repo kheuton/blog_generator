@@ -38,6 +38,9 @@ logo: 'assets/images/ghost.png'
 	opacity: 0.7;
 }
 </style>
+
+My first attempt at visualizing the achievement gap in Seattle. This only contains data for the 2014-2015 school year, and the 3rd grade results of the English Language Arts portion of the new Smarter Balanced Assessment. A much more complete version of this visualization with more data is available [here]({% post_url 2017-04-03-map-gap %})
+
 <div id="map">
 
 </div>
