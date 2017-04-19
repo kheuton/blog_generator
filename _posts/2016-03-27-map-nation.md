@@ -1,7 +1,7 @@
 ---
 layout: post
 cover: 'assets/images/cover7.jpg'
-title: An Embarrassing Attempt to Map Every School District in the Country
+title: An Attempt to Map Every School District in the Country
 date:   2016-04-28 10:18:00
 tags: maps
 subclass: 'post tag-test tag-content'
@@ -69,7 +69,7 @@ function getColor(d) {
 }
 
 
-var map = L.map('map').setView([47.6062, -122.3321], 11);
+var map = L.map('map').setView([39.8282, -96.5795], 4);
 L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
 	maxZoom: 18,
 	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
